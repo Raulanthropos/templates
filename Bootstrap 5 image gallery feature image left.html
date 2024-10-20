@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 Image Layout with Titles</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Feature Image as Background */
+      .feature-image {
+        background-image: url("https://via.placeholder.com/400x400");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: relative;
+      }
+
+      /* Title inside the feature image */
+      .feature-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent background for readability */
+        color: white;
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* Card image titles */
+      .card {
+        position: relative;
+      }
+
+      .card-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent background for readability */
+        color: white;
+        padding: 5px;
+        font-size: 1rem;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <!-- Feature Image (Left) -->
+        <div class="col-lg-6">
+          <div class="feature-image">
+            <div class="feature-title">
+              <h3>Feature Image Title</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Images (Right) -->
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="card-img-top"
+                  alt="Image 1"
+                />
+                <div class="card-title">Image 1 Title</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="card-img-top"
+                  alt="Image 2"
+                />
+                <div class="card-title">Image 2 Title</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="card-img-top"
+                  alt="Image 3"
+                />
+                <div class="card-title">Image 3 Title</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  class="card-img-top"
+                  alt="Image 4"
+                />
+                <div class="card-title">Image 4 Title</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
